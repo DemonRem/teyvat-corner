@@ -1,0 +1,59 @@
+// Bootstrap override
+$dark: #1a1a1a;
+
+@import "~bootstrap/scss/bootstrap";
+
+// Gatsby Override
+.gatsby-image-wrapper {
+    vertical-align: middle;
+}
+
+#___gatsby, #gatsby-focus-wrapper, .content {
+    height: 100%;
+}
+
+// Our styles
+$border-color: hsla(0,0%,100%,.1);
+
+body {
+    height: 100vh;
+}
+
+.navbar {
+    border-bottom: solid 1px $border-color;
+}
+
+.content {
+    padding-top: 56.8px;
+
+    &-sidebar {
+        float: left;
+        border-right: solid 1px $border-color;
+        height: 100%;
+        width: 21.5%;
+        padding: 20px;
+    }
+    &-main {
+        height: 100%;
+        width: 78.5%;
+        overflow-y: scroll;
+        padding: 20px;
+    }
+}
+
+
+.profile-card {
+    float: right;
+    margin-left: 20px;
+
+    &-image {
+        width: 250px;
+    }
+}
+
+.table-of-contents {
+    padding: 5px;
+    margin: 0 0 10px 0;
+    border: 1px solid $border-color;
+    max-width: 300px;
+}

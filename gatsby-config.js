@@ -1,4 +1,5 @@
 module.exports = {
+    pathPrefix: '/teyvat-corner',
     siteMetadata: {
         title: `Teyvat Corner`,
         description: `Your one stop shop for anything Genshin!`,
